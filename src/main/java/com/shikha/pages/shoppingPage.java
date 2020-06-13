@@ -37,7 +37,7 @@ public class shoppingPage extends Page {
 	
 	public AccountsMenu goToCustomerAccounts()
 	{
-		driver.findElement(By.xpath("//*[@id='header']/div[2]/div/div/nav/div[1]/a/span")).click();
+		click("CustomerAccounts_XPATH");
 		return new AccountsMenu();
 		
 	}

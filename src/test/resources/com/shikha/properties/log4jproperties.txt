@@ -1,6 +1,6 @@
 log4j.rootLogger=INFO, Appender
 log4j.appender.Appender=org.apache.log4j.FileAppender
-log4j.appender.Appender.File=F:\\Selenium\\Eclipse\\DataDrivenFramework\\src\\test\\resources\\logs\\Selenium.log
+log4j.appender.Appender.File=F:\\Selenium\\Eclipse\\PageObjectModel\\src\\test\\resources\\com\\shikha\\logs\\Application.log
 log4j.appender.Appender.layout=org.apache.log4j.PatternLayout
 log4j.appender.Appender.layout.ConversionPattern=%-7p %d [%t] %c %x - %m%n
 log4j.appender.Appender.Append=false
@@ -11,7 +11,7 @@ log4j.appender.file.maxBackupIndex=3
 #Application logs
 log4j.rootLogger=INFO, Appender
 log4j.appender.Appender=org.apache.log4j.FileAppender
-log4j.appender.Appender.File=F:\\Selenium\\Eclipse\\DataDrivenFramework\\src\\test\\resources\\logs\\Application.log
+log4j.appender.Appender.File=F:\\Selenium\\Eclipse\\PageObjectModel\\src\\test\\resources\\com\\shikha\\logs\\Selenium.log
 log4j.appender.Appender.layout=org.apache.log4j.PatternLayout
 log4j.appender.Appender.layout.ConversionPattern=%-7p %d [%t] %c %x - %m%n
 log4j.appender.Appender.Append=false

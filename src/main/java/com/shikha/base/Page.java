@@ -131,8 +131,14 @@ public class Page {
 		}
 	}
 	
+	
+	public static void quit()
+	{
+		driver.quit();
+	}
+	
 	//common Keywords
-	public void click(String locator) {
+	public static void click(String locator) {
 
 		if (locator.endsWith("_CSS")) {
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
@@ -141,10 +147,11 @@ public class Page {
 		} else if (locator.endsWith("_ID")) {
 			driver.findElement(By.id(OR.getProperty(locator))).click();
 		}
+		log.debug("Clicking on an element :" + locator);
 		test.log(LogStatus.INFO, "Clicking on : " + locator);
 	}
 
-	public void type(String locator, String value) {
+	public static void type(String locator, String value) {
 
 		if (locator.endsWith("_CSS")) {
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
@@ -153,7 +160,7 @@ public class Page {
 		} else if (locator.endsWith("_ID")) {
 			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
 		}
-
+		log.debug("Typing in an element :" + locator + " entered value as " + value);
 		test.log(LogStatus.INFO, "Typing in : " + locator + " entered value as " + value);
 
 	}
@@ -172,7 +179,7 @@ public class Page {
 		
 		Select select = new Select(dropdown);
 		select.selectByVisibleText(value);
-
+		log.debug("Selecting from and element : " + locator + " value as " + value);
 		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator + " value as " + value);
 
 	}

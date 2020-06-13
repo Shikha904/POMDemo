@@ -8,11 +8,11 @@ public class HomePage extends Page{
 	
 	public void goToSignUp()
 	{
-		driver.findElement(By.xpath("//a[@class='login']")).click();
+		click("login_XPATH");
 	}
 	public LoginPage goToLogin()
 	{
-		driver.findElement(By.xpath("//a[@class='login']")).click();
+		click("login_XPATH");
 		return new LoginPage();
 	}
 
