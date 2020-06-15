@@ -16,7 +16,7 @@ import org.testng.Reporter;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.shikha.base.Page;
-import com.shikha.utilities.MonitoringMail;
+//import com.shikha.utilities.MonitoringMail;
 import com.shikha.utilities.TestConfig;
 import com.shikha.utilities.Utilities;
 
@@ -87,7 +87,7 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 		
 	}
 
-	public void onFinish(ISuite arg0) {
+	/*public void onFinish(ISuite arg0) {
 		
 		MonitoringMail mail = new MonitoringMail();
 		 
@@ -115,6 +115,6 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 	public void onStart(ISuite arg0) {
 		// TODO Auto-generated method stub
 		
-	}
+	}*/
 
 }

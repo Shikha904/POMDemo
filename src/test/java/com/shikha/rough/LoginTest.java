@@ -6,7 +6,7 @@ import com.shikha.pages.LoginPage;
 import com.shikha.pages.shoppingPage;
 import com.shikha.pages.accounts.MyPersonalInformation;
 
-public class LoginTest {
+	public class LoginTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -20,7 +20,7 @@ public class LoginTest {
 	    AccountsMenu menu= sp.goToCustomerAccounts();
 	    Thread.sleep(10000);
 	    MyPersonalInformation mp= menu.goToMyPersonalInformation();
-	    mp.EditInformation("Shikhas");
+	    mp.EditInformation("Chetan");
 	   
 	}
 

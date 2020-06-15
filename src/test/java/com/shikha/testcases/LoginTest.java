@@ -2,12 +2,10 @@ package com.shikha.testcases;
 
 import java.util.Hashtable;
 
-import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import com.shikha.pages.HomePage;
 import com.shikha.pages.LoginPage;
-import com.shikha.pages.shoppingPage;
 import com.shikha.utilities.Utilities;
 
 
@@ -24,7 +22,7 @@ public class LoginTest extends BaseTest {
 	{
 		HomePage home = new HomePage();
 	    LoginPage lp= home.goToLogin();
-	    lp.doLogin(data.get("Username" ),data.get("Password"));
+	    lp.doLogin(data.get("Username"),data.get("Password"));
 	}
 
 

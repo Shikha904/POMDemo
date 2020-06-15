@@ -23,7 +23,7 @@ public class AccountsMenu extends Page {
 	
 	public MyPersonalInformation goToMyPersonalInformation()
 	{
-		Page.driver.findElement(By.xpath("//div[@id='center_column']/div/div/ul/li[4]/a/span")).click();
+		click("PersonalInformation_XPATH");
 		return new MyPersonalInformation();
 		
 	}

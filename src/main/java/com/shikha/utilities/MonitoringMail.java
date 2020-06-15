@@ -1,4 +1,4 @@
-package com.shikha.utilities;
+/*package com.shikha.utilities;
 import java.util.Properties;
 
 import javax.mail.Authenticator;
@@ -95,4 +95,4 @@ public class MonitoringMail
 	    }
 	}
 	
-}
+}*/

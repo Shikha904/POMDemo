@@ -4,7 +4,7 @@ import com.shikha.base.Page;
 
 public class LoginPage extends Page {
 	
-	public shoppingPage doLogin (String Username, String password) throws InterruptedException
+		public shoppingPage doLogin (String Username, String password) throws InterruptedException
 	{
 		
 		type("Email_XPATH",Username);

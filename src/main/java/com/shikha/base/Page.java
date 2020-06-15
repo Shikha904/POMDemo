@@ -48,8 +48,7 @@ public class Page {
 		
 		if(driver==null)
 		{
-			
-			
+
 			try {
 				fis = new FileInputStream(
 						System.getProperty("user.dir") + "\\src\\test\\resources\\com\\shikha\\properties\\Config.properties");
